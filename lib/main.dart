@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:waleed/Image_Page.dart';
+import 'package:waleed/pages/Home_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: "flutter 30 days challenge",
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text("Day 1"),
-      ),
-      body: Center(
-        child: Text("flutter 30 days challenge"),
-      )
-  ),
-  ),
-  );
+  runApp(MyApp());
   }
+class MyApp extends StatelessWidget{
+
+  @override
+  Widget build(BuildContext context) {
+   return MaterialApp(
+     debugShowCheckedModeBanner: false,
+     title: "flutter 30 days challenge",
+     home: ImagePage(),
+   );
+  }
+
+}
