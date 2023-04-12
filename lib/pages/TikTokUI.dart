@@ -5,6 +5,7 @@ class TikTokUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white54,
       body: Stack(
         children: [
           Positioned(
