@@ -1,6 +1,7 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:waleed/Image_Page.dart';
+import 'package:waleed/pages/Call%20UI.dart';
 import 'package:waleed/pages/Home_page.dart';
 import 'package:waleed/pages/TikTokUI.dart';
 import 'package:waleed/pages/day%205.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget{
    return MaterialApp(
      debugShowCheckedModeBanner: false,
      title: "flutter 30 days challenge",
-     home: MyStateFullWidget(),
+     home: TikTokUI(),
    );
   }
 

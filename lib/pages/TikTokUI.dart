@@ -5,117 +5,135 @@ class TikTokUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white54,
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
-            top: 60,
+            top: 160,
             left: 15,
             right: 15,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.close),
-                Row(
-                  children: [Icon(Icons.music_note), Text("Sound")],
-                ),
-                Column(
-                  children: [Icon(Icons.flip), Text("Flip")],
-                )
+                Text("Calling Via Zong",style: TextStyle(fontWeight: FontWeight.bold),)
+
               ],
             ),
           ),
           Positioned(
+            left: 50,
             right: 8,
-            top: 100,
+            top: 500,
             child: Column(
               children: [
-                SizedBox(
-                  height: 20,
+
+
+            Row(
+              children: [
+
+                Column(
+                  children: [
+                    Icon(Icons.speed),
+                    Text("Speed"),
+                  ],
                 ),
-                Icon(Icons.speed),
-                Text("Speed"),
-                SizedBox(
-                  height: 20,
+                Column(
+                  children: [
+                    SizedBox(
+                      width: 210,
+                    ),
+                    Icon(Icons.filter_1_sharp),
+                    Text("Filters"),
+                  ],
                 ),
-                Icon(Icons.filter_1_sharp),
-                Text("Filters"),
-                SizedBox(
-                  height: 20,
+                Column(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(Icons.timelapse),
+                    Text("Timer"),
+                  ],
                 ),
-                Icon(Icons.timelapse),
-                Text("Timer"),
+
+              ],
+            ),
+         Row(
+           children: [
+             Column(
+               children: [
+                 SizedBox(
+                   height: 20,
+                 ),
+                 Icon(Icons.flash_auto),
+                 Text("Flash"),
+               ],
+             ),
+             Column(
+               children: [
+                 SizedBox(
+                   width: 210,
+                   height: 20,
+                 ),
+                 Icon(Icons.flash_auto),
+                 Text("Flash"),
+               ],
+             ),
+             Column(
+               children: [
+                 SizedBox(
+                   width: 20,
+                   height: 20,
+                 ),
+                 Icon(Icons.flash_auto),
+                 Text("Flash"),
+           ],
+         ),
+
+
+            ],
+          ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        SizedBox(
+                          width: 20,
+                          height: 20,
+                        ),
+                        Icon(Icons.flash_auto),
+                        Text("Flash"),
+                  ],
+                ),
+            Column(
+              children: [
                 SizedBox(
+                  width: 210,
                   height: 20,
                 ),
                 Icon(Icons.flash_auto),
                 Text("Flash"),
-              ],
-            ),
-          ),
-          Positioned(
-            bottom: 20,
-              left: 25,
-              right: 25,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Column(
-                children: [
-                  Container(
-                    height: 50,
-                    width:50,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
-                    child: Icon(Icons.image),
-                  ),
-                  Text("Effects"),
-                ],
-              ),
-      Container(
-        height: 80,
-        width: 80,
-        padding: EdgeInsets.all(5),
-        decoration: BoxDecoration(
-          color: Colors.red.withOpacity(.6),
-          borderRadius: BorderRadius.all(Radius.circular(60))
-        ),
-        child: Container(
-          height: 70,
-        width: 70,
-          decoration: BoxDecoration(
-          color: Colors.red,
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            border: Border.all(color: Colors.black,width: 2,),
-        ),
-        ),
-      ),
-      Column(
-      children: [
-      Container(
-      height: 50,
-      width:50,
-      decoration: BoxDecoration(
-        color: Colors.grey,
-        borderRadius: BorderRadius.all(
-          Radius.circular(8),
-        ),
-      ),
-      child: Icon(Icons.upload),
-    ),
-    Text("Upload"),
             ],
           ),
+            Column(
+              children: [
+              SizedBox(
+              width: 20,
+              height: 20,
+            ),
+            Icon(Icons.flash_auto),
+            Text("Flash"),
+
+          ],
+            ),
+
+    ],
+      ),
     ],
     ),
-          ),
-            ],
-      ),
+    ),
+    ],
+    ),
     );
   }
 }
