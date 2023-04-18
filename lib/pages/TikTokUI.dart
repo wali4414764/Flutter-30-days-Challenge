@@ -29,6 +29,7 @@ class TikTokUI extends StatelessWidget {
 
 
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
 
                 Column(
@@ -59,6 +60,7 @@ class TikTokUI extends StatelessWidget {
               ],
             ),
          Row(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
            children: [
              Column(
                children: [
@@ -94,6 +96,7 @@ class TikTokUI extends StatelessWidget {
             ],
           ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
                       children: [
