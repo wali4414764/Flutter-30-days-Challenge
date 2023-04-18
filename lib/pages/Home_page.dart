@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:waleed/pages/day8.dart';
 
 class Homepage extends StatelessWidget {
+  final UserData userData;
+
+  const Homepage({required this.userData});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,8 +12,8 @@ class Homepage extends StatelessWidget {
         title: Text("Day 1"),
       ),
       body: Center(
-        child: Container(height: 90,
-         width: 200,
+        child: Container(height: 100,
+         width: 250,
             margin: EdgeInsets.symmetric(horizontal:50,vertical: 50),
 padding: EdgeInsets.only(top: 10,bottom: 10,left: 10,right: 10),
             decoration: BoxDecoration(
@@ -17,9 +21,9 @@ padding: EdgeInsets.only(top: 10,bottom: 10,left: 10,right: 10),
               borderRadius:  BorderRadius.all(Radius.circular(40))
             ),
             child: Text(
-              "flutter 30 days challenge",
+              "username:${userData.username},userId ${userData.userId}",
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 28,
                 color: Colors.red,
                 fontWeight: FontWeight.bold,
               fontStyle: FontStyle.italic,

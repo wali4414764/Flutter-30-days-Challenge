@@ -9,7 +9,9 @@ import 'package:waleed/pages/day%206.dart';
 import 'package:waleed/pages/day3.dart';
 import 'package:waleed/pages/day4.dart';
 import 'package:waleed/pages/day7.dart';
+import 'package:waleed/pages/day8.dart';
 import 'package:waleed/pages/login%20page.dart';
+import 'package:waleed/pages/on%20generate%20route.dart';
 import 'package:waleed/pages/sign%20up%20page.dart';
 
 void main() {
@@ -27,13 +29,15 @@ class MyApp extends StatelessWidget{
        brightness: Brightness.dark,
            primarySwatch: Colors.green,
      ),
-     initialRoute: "/Day7",
-     routes: {
-       "/":(context)=>Homepage(),
-       "/login":(context)=>LoginPage(),
-       "/SignUpPage":(context)=>SignUpPage(),
-       "/Day7":(context)=>Day7(),
-     },
+     initialRoute: "/",
+    // routes: {
+     //  "/day8":(_)=>Day8(),
+    //   "/":(context)=>Homepage(),
+     //  "/login":(context)=>LoginPage(),
+      // "/SignUpPage":(context)=>SignUpPage(),
+       //"/Day7":(context)=>Day7(),
+     //},
+     onGenerateRoute: OnGenerateRoute.route,
      debugShowCheckedModeBanner: false,
      title: "flutter 30 days challenge",
     // home: MyStateFullWidget(),
